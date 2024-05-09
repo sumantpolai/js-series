@@ -19,3 +19,25 @@ console.log(booleanIsLoggedIn);  //true
 // "" => false
 //1 => true , 0 => false
 // "sumanta" => true
+
+
+
+
+// ************************************************* Operation **************************************************
+     
+let value = 3
+let negValue = -value
+console.log(negValue); // -3
+
+
+
+
+let str1="hello"
+let str2=" sumant"
+let str3=str1 + str2
+console.log(str3);  //hello sumant
+
+console.log("1"+2); //12
+console.log(1 +"2"); //12
+console.log("1"+2+2); // 122
+console.log(1+2+"2"); // 32
