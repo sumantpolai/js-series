@@ -26,4 +26,26 @@ let myObj ={
 const myFunction=function(){
     console.log("Hello World");
 }
-        
+      
+
+
+
+//=====================================================================================================
+
+
+// Stack(primitive) , Heap (non primitive)
+
+let myYoutubeName="polaisgaming.com"
+let anotherName=myYoutubeName
+anotherName="chaiorcode"
+console.log(myYoutubeName); //polaisgaming
+console.log(anotherName);   //chaiorcode
+
+let userOne ={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+userTwo.email="sumantpolai@gmail.com";
+console.log(userOne.email);  //sumant@gmail.com
+console.log(userTwo.email);  //sumant@gmail.com
