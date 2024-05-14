@@ -40,14 +40,14 @@ const dc_heros=['superman','flash','superman']
 console.log("A", myArr);
 
 const myn1 = myArr.slice(1,3)  
-console.log(myn1);       // take the element from 1-3 except index of 3
+console.log(myn1);       // take the element from index of 1-3 except index of 3
 console.log(myArr);      // slice do not manipulate the original array
 
 console.log("B",myArr);
 
 const myn2= myArr.splice(1,3)
-console.log(myn2);   // splice take the element from 1-3 including 3 also
-console.log(myArr);  // but in case of splice it manipulate the original array
+console.log(myn2);   // splice take the element from index of 1-3 including 3 also
+console.log(myArr);  // but in case of splice it manipulate the original array 
 
 
 
