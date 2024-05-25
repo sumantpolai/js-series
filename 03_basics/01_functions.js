@@ -55,3 +55,40 @@ console.log(loginUserMessage("sumant"));  // it is a differenet way to take para
 //     return`${username} just logged in`
 // }
 // console.log(loginUserMessage());   //here it print Please enter a value 
+
+
+
+function calculateCartPrice(val1, val2, ...no1){  // when we pass multiple arguments then we use spread / rest operator
+
+    return no1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000));  //  here no1 contain 500,2000 so it return [500, 2000]
+
+
+const user ={
+    username: "sumanta",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+
+}
+
+handleObject(user)  // here print user name is sumanta and price is 199
+
+
+// also we can pass direct objects and arrays 
+
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray =[200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+console.log(returnSecondValue(myNewArray));  // 100
