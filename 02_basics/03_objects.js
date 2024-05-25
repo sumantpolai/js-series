@@ -34,7 +34,7 @@ const regulaerUser={
 }
 
 console.log(regulaerUser.fullname);  // here it go depth in fullname
-console.log(regulaerUser.);
+
 
 
 const obj1 ={1: "a", 2: "b"}
@@ -48,8 +48,34 @@ const obj4 = {...obj1,...obj2,...obj3} // spreade
 console.log(obj4); // add all object and store in obj4
 
 
-const users = [
-    {
 
-    }
-]
+const course ={
+    coursename :"js in hindi",
+    price:"999",
+    courseInstructor: "hitesh"
+}
+           //====== Destructuring=====//
+
+//const {courseInstructor} = course  // means here we export the coureinstructor value from course
+                                   // if we usethis then no need to write course. courseinstructor
+ const {courseInstructor:instructor} =course // here means we can call the courseinstructor as a instructor
+console.log(courseInstructor);  //  hites
+
+
+
+//== json  all API are in json formats either is given in array or given in object format
+
+
+// {
+//     "name":"sumanta",
+//     "coursename":"js in hindi"
+//     "price": "free"
+// }
+
+
+//  [ 
+//      {},
+//      {},
+//      {}
+
+// ]
