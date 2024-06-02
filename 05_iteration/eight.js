@@ -28,4 +28,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce( (item) => acc + item.price,0)
-console.log(priceToPay);  //here add all price and return that
+console.log(priceToPay);  // here add all price and return that
