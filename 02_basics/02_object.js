@@ -20,7 +20,7 @@ const JsUser={
 }
 console.log(JsUser.age);
 console.log(JsUser["age"]);  // both are doing same things and result was same 
-                             // But it is more features then . method
+                             // But it have more features then . method
 
 console.log(JsUser["full name"]);// here the only to print full name 
                                 // that's why we mostly use this method rather than . method
