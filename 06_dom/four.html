@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li >javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lagName){
+         const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('python')   // here add python
+    addLanguage('typescript')   // here add typescript
+
+   function addLanguage(langName){  // another way it is optimized way bcz dont need to traversing total element
+    const li = document.createElement('li')   // first we create a element 
+    li.appendChild(document.createTextNode(langName))  // then we take a li and append or attached child who is created new text node and inject direct
+    document.querySelector('.language').appendChild(li)
+   }
+   addLanguage('golang')
+
+
+   //=== Edit====
+    const secondLang = document.querySelector('li: nth-chaild(2)')  // here select the total li of python
+    // secondLang.innerHTML = 'mojo'  
+    const newli = document.createElement('li')
+    newli.textContent = 'mojo'   // here we create new textcontent
+    secondLang.replaceWith(newli)  // here replace the second lang. with mojo
+
+    //edit 
+
+    const firstLang = document.querySelector('li: first-child')
+    firstLang.outerHTML= '<li>Typescript</li>'   // here another way to replace , here we change total outer html
+
+
+    // remove
+
+    const lastLang = document.querySelector('li: last-child')
+    lastLang.remove()    // here it remove the last element
+</script>
+</html>
