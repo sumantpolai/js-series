@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+    
+</body>
+<script>
+    const Parent = document.querySelector('.parent');
+    console.log(Parent);      // here it print all the div block
+    console.log(Parent.children);   // here it shows all the html collection like div.day and also print index
+    console.log(Parent.children[1].innerHTML);    //here it goes to parent then go to children 1 of the inner html and print the tuesday
+
+
+    for ( let i=0; i< Parent.children.length; i++){
+        console.log(Parent.children[i].innerHTML);  // here it print all the days
+    }
+    // Parent.children[1].style.color='orange'
+    // console.log(firstElementChild);   // here it print firstelement 
+
+   const dayOne= document.querySelector('.day')
+   console.log(dayOne);   //here it print the 1st day div
+   console.log(dayOne.parentElement);  // here it give the parent div or parent block
+   console.log(dayOne.nextElementSibling);  // here it print the next sibling of the dayOne
+
+   console.log('NODES: ',Parent.childNodes);  // here it shows all the work behind the seen
+
+    </script>
+</html>
