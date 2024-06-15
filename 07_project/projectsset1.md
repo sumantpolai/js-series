@@ -70,7 +70,7 @@ form.addEventListener('submit', function(e){
 
 ```
 ## project 3
-```
+``` javascript
 const clock = document.getElementById('clock')
 
 setInterval(function(){
@@ -81,4 +81,43 @@ setInterval(function(){
 ```
 
 ## project 4
-```
+```javascript
+
+const randomNumber = parseInt(Math.random()*100+1);
+
+const submit =document.querySelector('#subt')
+const userInput =document.querySelector('#guessField')
+const guessSlot =document.querySelector('.guesses')
+const remaining =document.querySelector('.lastResult')
+const lowOrHi =document.querySelector('.lowOrHi')
+const startOver =document.querySelector('.resultParas');
+
+const p = document.createElement('p')
+
+let prevGuess =[]
+let numGuess = 1
+let playGame = true
+
+function validateGuess(guess){
+  // this method check the given guesss is valid or not
+
+}
+
+function checkGuess(guess){
+  // it check the enterd no is equal to the random no. or not
+
+}
+
+function displayGuess(guess){
+  // it clean the value and updat the remaining and guess
+}
+function displayMessage(message){
+  // it pass a msg in lowOrHi
+}
+
+function newGame (){
+
+}
+function endGame(){
+  
+}
