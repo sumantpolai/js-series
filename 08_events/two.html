@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+    // setTimeout(() => {    // it print after 2 sec.
+    //     console.log('sumanta');
+        
+    // }, 2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML='best js series'
+    }
+    const changeMe = setTimeout(changeText,2000)  // here the text is changes after 2 sec.
+                                 // after  we click stop button in b/w 2 sec. then the text is not stop
+
+   document.querySelector("#stop").addEventListener('click',function(){  // after we click the stop button the the text change is stop
+    clearTimeout(changeMe)  // here we clear the timeout for changeme variable
+    console.log('stoped');
+   })
+
+
+</script>
+</html>
