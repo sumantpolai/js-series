@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur js</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+//  setInterval(function(){
+//     console.log('sumanta',Date.now());
+//  },2000)  // after every 2 sec it print
+
+const sayDate = function(str){    // another way
+    console.log(str,Date.now());
+}
+document.querySelector('#start').addEventListener('click',function(){
+    changeDate =  setInterval(sayDate,2000,'hi')  // by this way we can take 3rd parameter
+})
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(changeDate)
+    console.log('stoped');
+})
+
+
+
+</script>
+</html>
