@@ -53,3 +53,50 @@ const promiseFour = new promise(function(resolve,reject){
  }).catch(function(error){   // here we catch the error
     console.log(error);   
  }).finally(() => console.log('the promise is finally either resolved or rejected'))   // this part is must print either is resolve or reject
+
+
+
+  const promiseFive = new promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({username : 'javascript', password: '123'})
+        }else{
+            reject('ERROR: js went wrong')
+        }
+    },1000) 
+
+  })
+  // async await    // is type of then and catch but here we use try catch block
+                    // async await not directly handled the error
+    async  function consumePromiseFive(){
+        try {
+            const response = await consumePromiseFive
+            console.log(response);
+        } catch (error) {
+            console.log(error);
+            
+        }
+    }
+    consumePromiseFive()
+
+
+    // async function getAllUser (){
+    //   try {
+    //     const response1 = await fetch('https://jsonplaceholder.typicode.com/users')
+    //   const data = await response1.json()   // here we use await bcz responce take time to convert into json
+    //   } catch (error) {
+    //     console.log('E:', error);
+    //   }
+    // }
+    // addEventListener()
+
+
+    // same thing in then and catch way
+
+    fetch('https://jsonplaceholder.typicode.com/users').then((response)=>{
+       return response.json()  // here we return the json 
+    }).then((data)=>{      // here we handel the json
+        console.log(data);
+    }).catch((error)=> console.log(error))
+    
