@@ -11,7 +11,7 @@
 ## parts of OOP
 Object literal 
 
-- Constructor function
+- Constructor function  // always give a new instance
 - Prototypes
 - Classes
 - Instances (new, this)
