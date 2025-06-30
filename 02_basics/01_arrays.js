@@ -38,7 +38,7 @@ console.log(all_new_heros);  // ['thor','ironman',spiderman','superman',flash','
 
 
 const another_arry=[1,2,3,[4,5,6],7,5,[3,4,5,[6,7]]]
- const real_another_Arry=another_arry.flat(Infinity);  //eturns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+ const real_another_Arry=another_arry.flat(Infinity);  //returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 console.log(real_another_Arry);  // [1,2,3,4,5,6,7,5,3,4,5,6,7]
 
 
